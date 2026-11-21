@@ -2,7 +2,7 @@
 
 Nhóm số n chấm nhóm số n + 1; nhóm cuối chấm nhóm 1. Chấm theo bằng chứng trong hồ sơ, không theo cách trình bày: một đề xuất No-go có lý do bằng số được điểm cao hơn một đề xuất Go bỏ qua con số bất lợi.
 
-> **Trạng thái: Nguyễn Trần Anh Khôi đã xác nhận.** Điểm do Claude Code đề xuất từ hồ sơ HC2 tại commit `82b663c`. Chưa có buổi trình bày trực tiếp nên chưa có câu trả lời của HC2.
+> **Trạng thái: Nguyễn Trần Anh Khôi đã xác nhận.** Điểm do Claude Code đề xuất từ hồ sơ HC2 tại commit `82b663c`. HC2 trả lời câu hỏi bằng văn bản, ghi ở cuối phiếu.
 
 - Nhóm chấm (hội đồng): Alone
 - Nhóm được chấm: HC2
@@ -20,4 +20,6 @@ Nhóm số n chấm nhóm số n + 1; nhóm cuối chấm nhóm 1. Chấm theo b
 
 **Một câu hỏi cho đội trình:** Bước 50% chạy 1 tuần chỉ được khoảng 215 yêu cầu mỗi nhân viên, vậy nhóm kéo dài bao lâu để đạt 299, và ngày quyết định 2027-01-05 có còn đủ 7 ngày theo dõi mở lại không?
 
-**Câu trả lời của đội trình (ghi lại tại buổi):** Chưa có, ghi khi HC2 trả lời.
+**Câu trả lời của đội trình (ghi lại tại buổi):** Bước 50% cần khoảng 10 ngày để đạt 299 yêu cầu mỗi nhân viên (299 ÷ 215 × 7 ≈ 9,7 ngày), nên HC2 kéo dài bước 50% lên 2 tuần (≈ 430 yêu cầu/người); tổng 4 tuần rollout + 7 ngày theo dõi mở lại = 35 ngày, nên pilot bắt đầu chậm nhất 2026-12-01 thì 2027-01-05 vẫn đủ 7 ngày theo dõi (bắt đầu muộn hơn thì lùi ngày quyết định đúng số ngày trễ). Đã cập nhật `pilot_plan.yaml` (rollout, decision_date, chú thích "Thời lượng") và mục 6 hồ sơ ở commit `<MÃ_COMMIT>`.
+
+**Ghi chú kiểm tra của hội đồng:** Phép tính đúng (299 ÷ 215 × 7 ≈ 9,7 ngày; 2027-01-05 − 35 ngày = 2026-12-01). Khi kiểm tra, `main` của HC2 vẫn ở commit `82b663c`, `pilot_plan.yaml` vẫn ghi mỗi bước một tuần và câu trả lời chưa có mã commit, nên chưa ghi nhận phần cập nhật. Câu trả lời cũng chưa xử lý luật mở lại 7 ngày và luật chi phí khi xem lại 100%, nên điểm giữ nguyên 25/30.

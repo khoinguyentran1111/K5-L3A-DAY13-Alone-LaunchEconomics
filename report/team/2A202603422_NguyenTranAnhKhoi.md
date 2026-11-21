@@ -33,5 +33,5 @@ Toàn bộ nhiệm vụ A–E và phiếu duyệt chéo nhóm HC2 của nhóm Al
 ## 6. Tự đánh giá
 
 - Đã có đủ sản phẩm của nhiệm vụ A–E, hai bộ nhãn và phiếu chấm HC2.
-- Hạn chế: hai bộ nhãn đều do AI gắn; phiếu chấm còn chờ câu trả lời của HC2.
+- Hạn chế: hai bộ nhãn đều do AI gắn; phần cập nhật HC2 nêu trong câu trả lời chưa thấy trên repo của họ khi kiểm tra.
 - Phần lớn code và hồ sơ do Claude Code thực hiện; phần việc trực tiếp của tôi là giao việc, xin phép coach và xác nhận kết quả.

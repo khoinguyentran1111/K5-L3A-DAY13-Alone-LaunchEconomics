@@ -32,7 +32,7 @@ Báo cáo ngắn, tối đa 2 trang. Số liệu chi tiết nằm trong các fil
 
 - Nhóm chỉ có 1 người nên nhiệm vụ C dùng AI gắn nhãn với sự cho phép của lab coach. Bộ 1 gắn sau khi đã đọc bảng tham khảo; bộ 2 do một agent mới gắn mù, không thấy đáp án hay bộ 1. Hai bộ trùng 20/20, nhưng cả hai cùng là AI nên tỉ lệ có thể cao hơn đồng thuận giữa hai người.
 - Đã chạy lại `lab13.py` từ bản clone sạch trên GitHub trong môi trường Python mới và đạt ba phép thử; chưa chạy trên một máy vật lý khác.
-- Duyệt chéo thực hiện trên bản clone repo HC2 (commit `82b663c`), chưa có buổi trình bày trực tiếp nên chưa ghi được câu trả lời của HC2. Không sao chép nội dung hay nhãn của HC2 vào bài Alone.
+- Duyệt chéo thực hiện trên bản clone repo HC2 (commit `82b663c`); HC2 trả lời câu hỏi của hội đồng bằng văn bản, ghi trong `phieu_cham.md`. Không sao chép nội dung hay nhãn của HC2 vào bài Alone.
 - Một tuần ở bước 50% chỉ được 215 yêu cầu mỗi người, thấp hơn mức 299. Kế hoạch kéo bước này thành 14 ngày (430 yêu cầu mỗi người).
 - Chỉ số mở lại có độ trễ 7 ngày, nên luật an toàn dùng cohort đã đủ thời gian theo dõi, kèm một luật tức thời cho lỗi hoàn trùng.
 
