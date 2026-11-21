@@ -27,11 +27,11 @@ Toàn bộ nhiệm vụ A–E và phiếu duyệt chéo nhóm HC2 của nhóm Al
 
 - **Claude Code (Opus 5.5):** viết `src/lab13.py`, chạy tính toán, soạn các file hồ sơ và báo cáo.
 - **Cách kiểm tra đã làm:** đối chiếu kết quả với số trong hướng dẫn lab; tính lại tổng chi phí, chi phí mỗi việc thành công và B4 bằng script độc lập không dùng pandas.
-- **Gắn nhãn:** lab coach cho phép Claude Code gắn 20 nhãn. Claude Code đã đọc bảng nhãn tham khảo trước khi gắn, nên đây không phải bộ nhãn độc lập và không có tỉ lệ đồng thuận.
+- **Gắn nhãn:** lab coach cho phép dùng AI gắn nhãn. Bộ 1 do Claude Code gắn sau khi đã đọc bảng tham khảo; bộ 2 do một agent Claude mới gắn mù, không thấy đáp án hay bộ 1. Hai bộ trùng 20/20, nhưng cùng là AI nên tỉ lệ có thể cao hơn đồng thuận giữa hai người.
 - **Duyệt chéo:** Claude Code đọc hồ sơ HC2 (commit `82b663c`) và đề xuất điểm kèm lý do; tôi đã xác nhận phiếu. Không sao chép nội dung hay nhãn của HC2.
 
 ## 6. Tự đánh giá
 
-- Đã có đủ sản phẩm của nhiệm vụ A, B, D, E, 20 nhãn của nhiệm vụ C và phiếu chấm HC2.
-- Chưa đạt: nhiệm vụ C thiếu bộ nhãn độc lập thứ hai nên không có tỉ lệ đồng thuận; phiếu chấm chưa có câu trả lời trực tiếp của HC2.
+- Đã có đủ sản phẩm của nhiệm vụ A–E, hai bộ nhãn và phiếu chấm HC2.
+- Hạn chế: hai bộ nhãn đều do AI gắn; phiếu chấm còn chờ câu trả lời của HC2.
 - Phần lớn code và hồ sơ do Claude Code thực hiện; phần việc trực tiếp của tôi là giao việc, xin phép coach và xác nhận kết quả.

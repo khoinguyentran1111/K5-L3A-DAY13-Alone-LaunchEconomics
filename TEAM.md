@@ -5,7 +5,7 @@
 - Tên nhóm: Alone
 - Lớp: L3A
 - Repo nhóm: `K5-L3A-DAY13-Alone-LaunchEconomics` (xem [SUBMISSION.md](SUBMISSION.md))
-- URL repo, nhánh nộp, commit chốt: https://github.com/khoinguyentran1111/K5-L3A-DAY13-Alone-LaunchEconomics · `main` · nội dung bài ở commit `9117e47`
+- URL repo, nhánh nộp, commit chốt: https://github.com/khoinguyentran1111/K5-L3A-DAY13-Alone-LaunchEconomics · `main` · commit chốt là commit mới nhất trên `main` trước deadline
 
 ## Thành viên
 
@@ -20,7 +20,7 @@ Bốn vai của lab:
 - **Người gắn nhãn 1:** đọc đề, theo dõi điều kiện "Xong khi"; gắn nhãn 20 ca độc lập ở CP3.
 - **Người gắn nhãn 2, kiêm giữ hồ sơ:** điền `report/team/ho_so_launch_v0.md` từ đầu buổi; gắn nhãn 20 ca độc lập ở CP3.
 
-Nhóm chỉ có 1 thành viên nên chưa đáp ứng được yêu cầu hai người gắn nhãn độc lập; lab coach đã cho phép dùng Claude Code để gắn 20 nhãn.
+Nhóm chỉ có 1 thành viên nên hai vai gắn nhãn do AI đảm nhận, với sự cho phép của lab coach; chi tiết trong `report/team/bang_loi.md`.
 
 ## Cá nhân
 
@@ -36,7 +36,7 @@ Báo cáo cá nhân: [report/team/2A202603422_NguyenTranAnhKhoi.md](report/team/
 
 - Giao việc và chịu trách nhiệm cho bài nộp. Code và hồ sơ được tạo bằng Claude Code, đã khai trong báo cáo cá nhân.
 - Phiếu duyệt chéo nhóm HC2: Claude Code soạn, Nguyễn Trần Anh Khôi đã xác nhận.
-- Nhiệm vụ C: Claude Code gắn 20 nhãn với sự cho phép của lab coach. Chưa có bộ nhãn độc lập thứ hai.
+- Nhiệm vụ C: hai bộ nhãn do AI gắn với sự cho phép của lab coach (bộ 2 gắn mù), đồng thuận 20/20.
 
 ### Bằng chứng
 
