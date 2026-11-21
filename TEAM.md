@@ -5,7 +5,7 @@
 - Tên nhóm: Alone
 - Lớp: L3A
 - Repo nhóm: `K5-L3A-DAY13-Alone-LaunchEconomics` (xem [SUBMISSION.md](SUBMISSION.md))
-- URL repo, nhánh nộp, commit chốt: https://github.com/khoinguyentran1111/K5-L3A-DAY13-Alone-LaunchEconomics · `main` · (điền sau khi commit)
+- URL repo, nhánh nộp, commit chốt: https://github.com/khoinguyentran1111/K5-L3A-DAY13-Alone-LaunchEconomics · `main` · nội dung bài ở commit `9117e47`
 
 ## Thành viên
 
