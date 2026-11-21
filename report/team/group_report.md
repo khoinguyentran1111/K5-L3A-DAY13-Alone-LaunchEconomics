@@ -25,7 +25,7 @@ Báo cáo ngắn, tối đa 2 trang. Số liệu chi tiết nằm trong các fil
 - Phạm vi noi_dia + hang_nang, đã cộng cố định: **4.599 đ = 0,38×** của 12.000 đ [simulated].
 - Con số bất lợi: xem lại 100% tốn **11.743 đ = 0,98×** [simulated]; pilot chỉ có power **0,64** nếu tác động thật là 5 điểm.
 - Đề xuất: **Go có điều kiện** cho pilot noi_dia + hang_nang, quyết định ngày 2027-01-12.
-- Kết quả hội đồng chấm nhóm Alone: **chưa có**.
+- Alone và HC2 chấm chéo nhau. Kết quả HC2 chấm Alone: **chưa có** (`phieu_cham.md` của HC2 tại commit `82b663c` còn trống).
 - Phiếu nhóm Alone chấm HC2 (đã xác nhận): **25/30, Go có điều kiện**.
 
 ## 5. Khó khăn và cách xử lý
