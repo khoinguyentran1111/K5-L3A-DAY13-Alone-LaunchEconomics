@@ -17,6 +17,8 @@
 #
 # Đánh đổi đã chấp nhận: chỉ đủ mẫu cho mức chênh 6 điểm. Nếu tác động thật là 5 điểm, power chỉ còn 0,64.
 # Lịch: bước 0.50 phải chạy 14 ngày, vì 1 tuần chỉ được 215 yêu cầu/người (< 299); 14 ngày được 430 yêu cầu/người.
+# Nhánh thu hẹp (bổ sung sau câu hỏi của hội đồng HC2): noi_dia có 25,75 yêu cầu/người/ngày, nên cần 12 ngày để đạt 299.
+#   Số noi_dia ước tính trên dữ liệu chạy thử, chưa tính tác động của giới hạn 2 lần chạy.
 #
 # Tỉ lệ mo_lai_trong_7_ngay hiện tại và ngưỡng an toàn đã chọn:
 #   Toàn mẫu 4,25% (51/1.200); phạm vi pilot 3,97% (39/982). Ngưỡng 3% sẽ dừng pilot ngay, nên dùng chênh +2 điểm so với đối chứng và trần 6%.
@@ -49,6 +51,7 @@ pilot:
     - "NẾU tỉ lệ mở lại của nhóm trợ lý cao hơn đối chứng ≥ 2 điểm hoặc vượt 6% TRONG cohort 7 ngày gần nhất đã đủ 7 ngày theo dõi và có ít nhất 800 yêu cầu THÌ Giám đốc vận hành tắt trợ lý trong 30 phút và PM rà 20 trace mở lại KHÔNG THÌ không được sang bước rollout tiếp"
     - "NẾU chi phí biến đổi mỗi việc thành công (phút đo thật, chưa cộng cố định) > 8.000 đ TRONG 2 tuần liên tiếp tính từ tuần 2 THÌ PM trợ lý hoàn phí thu hẹp về noi_dia và giới hạn 2 lần chạy KHÔNG THÌ không được mở lại hang_nang hoặc sang bước rollout tiếp"
     - "NẾU tỉ lệ bỏ qua gợi ý (sửa + bỏ) > 40% TRONG 1 tuần THÌ Trưởng nhóm CSKH phỏng vấn 5 nhân viên trong 3 ngày và báo cáo nguyên nhân KHÔNG THÌ không được chuyển bước rollout"
+    - "NẾU sau khi thu hẹp về noi_dia chi phí biến đổi mỗi việc thành công vẫn > 8.000 đ (xem lại > 68%, simulated) TRONG 7 ngày đầu đo lại (2026-12-28 đến 2027-01-03) THÌ Giám đốc vận hành dừng mở rộng và ghi đề xuất No-go cho việc mở rộng vào ngày 2027-01-04 KHÔNG THÌ không được mở lại hang_nang hoặc tăng số nhân viên dùng trợ lý"
   review_policy: "Tuần 1 xem lại 100%. Chỉ giảm xuống 50% khi sửa + bỏ < 15% trong tuần trước (đợt chạy thử: 21,1%, chưa đạt). Trưởng nhóm CSKH quyết định"
   interim_looks: "Không xem chỉ số chính trước ngày quyết định; hằng tuần chỉ kiểm tra an toàn, chi phí và mức sử dụng để áp dụng luật dừng"
   rollback: "Giám đốc vận hành bấm cờ tắt, hiệu lực trong 30 phút; khách được phục vụ bằng luồng nhân viên tự làm, ticket đang mở chuyển cho nhân viên kèm tóm tắt"
@@ -58,7 +61,15 @@ pilot:
     step_025: "2026-12-14 đến 2026-12-20"
     step_050: "2026-12-21 đến 2027-01-03"
     follow_up_ends: "2027-01-10"
-  decision_date: "2027-01-12"
+  contingency_noi_dia:
+    trigger: "Luật chi phí kích hoạt cuối tuần 3 (2026-12-27) khi xem lại vẫn ở 100%"
+    primary_scope: "Chỉ noi_dia, chỉ tính yêu cầu từ 2026-12-28 vì can thiệp đã đổi (chỉ còn noi_dia, tối đa 2 lần chạy)"
+    measurement: "12 ngày, 2026-12-28 đến 2027-01-08; khoảng 309 yêu cầu/người, n hiệu dụng 863"
+    min_requests_per_cluster: 299
+    max_review_share: 0.68        # simulated; 0,636 nếu làm lại 15,3 phút
+    follow_up_ends: "2027-01-15"
+    decision_date: "2027-01-19"
+  decision_date: "2027-01-12"     # đổi thành 2027-01-19 nếu kích hoạt contingency_noi_dia
   simulated_inputs:
     - "phut_xem_lai_simulated: 890 phút, 1.780.000 đ"
     - "phut_lam_lai_simulated: 1.132 phút, 2.264.000 đ, trung bình 15,3 phút/ca"
@@ -66,3 +77,4 @@ pilot:
     - "Phạm vi pilot 3.414 đ; cộng cố định 4.599 đ (0,38×) và 5.784 đ ở nửa khối lượng (0,48×)"
     - "Xem lại 100%: 11.743 đ (0,98×), hoặc 12.415 đ (1,03×) nếu làm lại 15,3 phút"
     - "Ngưỡng chi phí 8.000 đ tương ứng xem lại tối đa 64%"
+    - "noi_dia xem lại 100%: 11.301 đ (0,94×), hoặc 11.784 đ (0,98×) nếu làm lại 15,3 phút; ngưỡng 8.000 đ tương ứng xem lại tối đa 68% (63,6% nếu làm lại 15,3 phút)"

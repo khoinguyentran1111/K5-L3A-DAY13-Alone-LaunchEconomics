@@ -35,6 +35,7 @@ Báo cáo ngắn, tối đa 2 trang. Số liệu chi tiết nằm trong các fil
 - Duyệt chéo thực hiện trên bản clone repo HC2 (commit `82b663c`); HC2 trả lời câu hỏi của hội đồng bằng văn bản, ghi trong `phieu_cham.md`. Không sao chép nội dung hay nhãn của HC2 vào bài Alone.
 - Một tuần ở bước 50% chỉ được 215 yêu cầu mỗi người, thấp hơn mức 299. Kế hoạch kéo bước này thành 14 ngày (430 yêu cầu mỗi người).
 - Chỉ số mở lại có độ trễ 7 ngày, nên luật an toàn dùng cohort đã đủ thời gian theo dõi, kèm một luật tức thời cho lỗi hoàn trùng.
+- Câu hỏi của hội đồng HC2 chỉ ra kế hoạch thiếu nhánh khi đã thu hẹp về noi_dia mà xem lại vẫn 100% (11.301 đ = 0,94× [simulated]). Nhóm đã bổ sung lịch đo lại 12 ngày, ngưỡng xem lại ≤ 68% và điều kiện No-go cho việc mở rộng.
 
 ## 6. Tổng hợp đóng góp
 
